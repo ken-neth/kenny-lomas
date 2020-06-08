@@ -1,5 +1,22 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+
+## Deploy project on Firebase
+
+In the project directory, you can run:
+
+### `yarn build'
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+### `firebase deploy'
+
+Deploys index.html in build folder.
+
 ## Available Scripts
 
 In the project directory, you can run:
