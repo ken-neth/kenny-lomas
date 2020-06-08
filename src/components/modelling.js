@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Input, Label, Menu } from 'semantic-ui-react'
+import { Input, Label, Menu, Modal, Image, Icon} from 'semantic-ui-react'
 
 import { withRouter } from 'react-router-dom'
 
@@ -20,7 +20,10 @@ class Modelling extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { width: 0, height: 0 };
+        this.state = { 
+          width: 0, 
+          height: 0
+        };
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
       }
       
@@ -36,6 +39,7 @@ class Modelling extends Component {
       updateWindowDimensions() {
         this.setState({ width: window.innerWidth, height: window.innerHeight });
       }
+      
 
   render() {
 
@@ -83,13 +87,23 @@ class Modelling extends Component {
             
             <h1>Bar render</h1>
             <p>Coursework for 2018 COMSM31000 Character and Set Design unit.</p>
-
-            <img src={finalrender} style={{align: 'center', width: this.state.width/2}}></img>
-
+            <Modal trigger={<img src={finalrender} style={{align: 'center', width: this.state.width/2}}></img>} closeIcon closeOnDimmerClick={false}>
+                <Image src={finalrender}/>
+            </Modal>
+            
             <h1>Ambient Occlusion Pass</h1>
-            <img src={AOpass} style={{align: 'center', width: this.state.width/2}}></img>
-            <img src={barwindows} style={{align: 'center', width: this.state.width/2}}></img>
-            <img src={boothmodel} style={{align: 'center', width: this.state.width/2}}></img>
+            <Modal trigger={<img src={AOpass} style={{align: 'center', width: this.state.width/2}}></img>} closeIcon closeOnDimmerClick={false}>
+                <Image src={AOpass}/>
+            </Modal>
+            <Modal trigger={<img src={barwindows} style={{align: 'center', width: this.state.width/2}}></img>} closeIcon closeOnDimmerClick={false}>
+                <Image src={barwindows}/>
+            </Modal>
+            <Modal trigger={<img src={boothmodel} style={{align: 'center', width: this.state.width/2}}></img>} closeIcon closeOnDimmerClick={false}>
+                <Image src={boothmodel}/>
+            </Modal>
+            
+            
+            
         </div>
     )
   }
