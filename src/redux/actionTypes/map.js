@@ -1,0 +1,10 @@
+
+import ACT from './actionTypeCreator'
+
+export default {
+    UPDATE_MAP_CENTER: ACT("UPDATE_MAP_CENTER"),
+    UPDATE_USER_LOC:ACT("UPDATE_USER_LOC"),
+    UPDATE_ADD_FLAG :ACT("UPDATE_ADD_FLAG"),
+    TOGGLE_MAP_FILTER:ACT("TOGGLE_MAP_FILTER")
+    
+}
