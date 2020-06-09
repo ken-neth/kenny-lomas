@@ -28,6 +28,7 @@ function App() {
   return (
     <div className="App" style={{marginTop: '2%'}}>
       <h1>Kenny Lomas</h1>
+      <h2> A homemade React web app hosted on Google Firebase.</h2>
       <NavMenu/>
     </div>
   );

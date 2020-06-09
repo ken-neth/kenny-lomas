@@ -16,25 +16,29 @@ class UnitModal extends Component {
             {/* 2019 COMSM0018 Applied Deep Learning */}
 
             <Modal trigger={
-                <Card fluid header={this.props.title} meta={this.props.date} />
-            }>
-                <Modal.Header>Profile Picture</Modal.Header>
+                <Card fluid header={this.props.title} meta={this.props.date} />  
+                }
+                closeIcon
+            >
+                <Modal.Header>{this.props.title}</Modal.Header>
                 <Modal.Content image>
-                <Image wrapped size='medium' src='https://react.semantic-ui.com/images/wireframe/image.png' />
+                
                 <Modal.Description>
-                    <Header>Modal Header</Header>
-                    <p>
-                    This is an example of expanded content that will cause the modal's
-                    dimmer to scroll
-                    </p>
-                    <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-                    <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-                    <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-                    <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-                    <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-                    <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-                    <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-                    <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
+                    <div>
+                        <Header>Modal Header</Header>
+                        <p>
+                        This is an example of expanded content that will cause the modal's
+                        dimmer to scroll
+                        </p>
+                        <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
+                        <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
+                        <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
+                        <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
+                        <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
+                        <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
+                        <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
+                        <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
+                    </div>
                 </Modal.Description>
                 </Modal.Content>
                 <Modal.Actions>

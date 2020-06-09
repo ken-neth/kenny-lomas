@@ -44,13 +44,14 @@ class NavMenu extends Component {
     return (
         <Router>
         <div style={{paddingLeft : '15%', paddingRight: '15%'}}>
-        <Menu>
+        <Menu compact>
           <Menu.Item as={Link} to='/' name='home'/>
 
         {this.state.width <=1100 &&
           <Dropdown item text='Projects'>
           <Dropdown.Menu>
             <Dropdown.Item text='Thesis Project' as={Link} to='/uni-projects/opinion-dynamics'/>
+            <Dropdown.Item text='Machine Learning Projects' as={Link} to='/uni-projects/machine-learning/'/>
             {/* <Dropdown.Item text='Flood Warning' as={Link} to='/uni-projects/flood-warning'/> */}
             <Dropdown.Item text='Games Project' as={Link} to='/uni-projects/food-fight'/>
             <Dropdown.Item text='Maya modelling' as={Link} to='/uni-projects/maya-modelling'/>
