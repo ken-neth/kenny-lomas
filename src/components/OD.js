@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import { Input, Label, Menu } from 'semantic-ui-react'
 
-import { withRouter } from 'react-router-dom'
+import Contact from './contact'
 
 class ODthesis extends Component {
 
@@ -9,7 +8,9 @@ class ODthesis extends Component {
 
     return (
         <div>
-            <h1>OD</h1>
+            <h1>Exploring Narrative Economics (2020)</h1>
+            <h2>A Novel Simulation Platform that Integrates Automated Traders with Opinion Dynamics</h2>
+            <Contact/>
         </div>
     )
   }

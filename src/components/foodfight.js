@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import { Input, Label, Menu, Modal, Image } from 'semantic-ui-react'
+import { Modal, Image } from 'semantic-ui-react'
 
-import { withRouter } from 'react-router-dom'
 
 import "video-react/dist/video-react.css";
 import { Player } from 'video-react';
@@ -13,6 +12,7 @@ import Food from '../assets/foodfight/food.png'
 import Game from '../assets/foodfight/game.png'
 import Overview from '../assets/foodfight/overview.png'
 import Sketches from '../assets/foodfight/sketches.png'
+import Contact from './contact';
 
 class Foodfight extends Component {
 
@@ -94,7 +94,8 @@ class Foodfight extends Component {
             <Modal trigger={<img src={Food} style={{align: 'center', width: this.state.width/2}}></img>} closeIcon>
                 <Image src={Food}/>
             </Modal>
-
+            
+            <Contact/>
         </div>
     )
   }

@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import { Input, Label, Grid, Image, Menu } from 'semantic-ui-react'
-
-import { withRouter } from 'react-router-dom'
+import { Grid, Image } from 'semantic-ui-react'
 
 import HuaweiPoster from '../assets/logos/huawei_poster.jpg'
 import Samsung from '../assets/logos/samsung.jpg'
 import Britbox from '../assets/logos/britbox.jpg'
 import StadiaConf from '../assets/logos/stadia_conference.jpg'
 import DeepMind from '../assets/logos/deep-mind.jpg'
+import Contact from './contact'
 
 class Publications extends Component {
 
@@ -61,6 +60,8 @@ class Publications extends Component {
                 </Grid.Column>
             </Grid.Row>
           </Grid>
+          
+          <Contact/>
         </div>
     )
   }

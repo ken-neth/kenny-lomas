@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import { Input, Label, Menu, Modal, Image, Icon} from 'semantic-ui-react'
-
-import { withRouter } from 'react-router-dom'
+import { Modal, Image} from 'semantic-ui-react'
 
 import finalrender from '../assets/renders/finalrender.jpeg'
 
@@ -12,8 +10,10 @@ import boothmodel from '../assets/renders/boothmodel.jpeg'
 import Video1 from '../assets/renders/full_animation.mp4'
 import Video2 from '../assets/renders/sidebyside.mp4'
 
-import "video-react/dist/video-react.css";
-import { Player } from 'video-react';
+import "video-react/dist/video-react.css"
+import { Player } from 'video-react'
+
+import Contact from './contact'
 
 
 class Modelling extends Component {
@@ -103,7 +103,7 @@ class Modelling extends Component {
             </Modal>
             
             
-            
+            <Contact/>
         </div>
     )
   }

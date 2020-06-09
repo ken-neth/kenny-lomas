@@ -3,7 +3,7 @@ import { Input, Icon, Button, Label, Menu } from 'semantic-ui-react'
 
 import { Link } from 'react-router-dom'
 
-import LinkedIn from '../assets/logos/linkedin_logo.png'
+import Contact from './contact'
 
 class home extends Component {
 
@@ -44,28 +44,7 @@ class home extends Component {
             sponsored society events, such as: the Boeing 24 hr Hackathon, as well as recorded, consolidated <br/>
             and actively contributed to minutes for all meetings.</p>
 
-            <hr/>
-
-            {/* <br/>
-            <p>
-            As well as self study, I am attending Japanese language classes through the UoB Japanese society. <br/>
-            Keen traveller, last Summer visiting Bulgaria and learning a little of the language. <br/>
-            Competed in multiple years of BEEES (Bristol Electrical and Electronic Society) Robot Wars. <br/> 
-            During my tenure as Secretary of the UoB Computer Science Society, I held positions as captain for <br/>
-            both our intramural Basketball and Badminton teams. More recently I have been trying my hand at <br/>
-            Brazilian jiu-jitsu.
-            </p> */}
-
-            <a href="http://www.linkedin.com/in/kenneth-lomas-243a18138" target="_blank">
-            <Button color='linkedin'>
-                <Icon name='linkedin' /> LinkedIn
-            </Button>
-            </a>
-            <a href="https://github.com/ken-neth" target="_blank">
-            <  Button color='github'>
-                <Icon name='github' /> GitHub
-            </Button>
-            </a>
+            <Contact/>
         </div>
     )
   }

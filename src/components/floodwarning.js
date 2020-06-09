@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import { Input, Label, Menu } from 'semantic-ui-react'
 
-import { withRouter } from 'react-router-dom'
+import Contact from './contact'
 
 class flood extends Component {
 
@@ -10,6 +9,7 @@ class flood extends Component {
     return (
         <div>
             <h1>flood</h1>
+            <Contact/>
         </div>
     )
   }
