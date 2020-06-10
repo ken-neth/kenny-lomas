@@ -38,7 +38,8 @@ class Foodfight extends Component {
   render() {
 
     return (
-        <div>
+        <div
+        style={{paddingTop: '2%'}}>
             <h1>Food Fight</h1>
 
             <h3>Food Fight is a team based competitive cooking game running on the Unity Engine and <br/>

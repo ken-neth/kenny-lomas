@@ -1,34 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+
 import './App.css';
 
-// import router components for navigation
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams
-} from "react-router-dom";
-
 // import semantic ui components and css style
-import { Button, Header, Icon, Menu, Segment, Sidebar } from 'semantic-ui-react'
+import { Icon, Segment} from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css';
 
 // import navigation menu
 // import NavMenu from './components/NavigationMenu/navigationContainer'
 import NavMenu from './components/NavMenu'
 
-// import Home page
-import Home from './components/home'
+import FirebaseLogo from './assets/logos/firebase.png'
+import Logo from './logo.svg'
 
 function App() {
   return (
-    <div className="App" style={{marginTop: '2%'}}>
-      <h1>Kenny Lomas</h1>
-      <h2> A homemade React web app hosted on Google Firebase.</h2>
+    <div className="App" style={{paddingTop: '2%'}}>
+      <h1>
+        {/* <img class="ui mini spaced image" src={Logo}/> */}
+        Kenny Lomas 
+        {/* <img class="ui mini spaced image" src={FirebaseLogo}/> */}
+      </h1>
+      <Segment> 
+        A homemade React web app hosted on Google Firebase 
+      </Segment>
       <NavMenu/>
     </div>
   );

@@ -44,7 +44,7 @@ class Modelling extends Component {
   render() {
 
     return (
-        <div style={{paddingLeft : '10%', paddingRight: '10%'}}>
+        <div style={{paddingLeft : '10%', paddingRight: '10%', paddingTop: '2%'}}>
             
             <h1>Dancing robot animation</h1>
 

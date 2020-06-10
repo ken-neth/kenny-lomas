@@ -12,6 +12,7 @@ class MachineLearning extends Component {
         <div 
             // align='left'
             // style={{paddingLeft : '10%', paddingRight: '10%'}}
+            style={{paddingTop: '2%'}}
         >
             <h1>Machine Learning Projects </h1>
             <div style={{paddingLeft : '10%', paddingRight: '10%'}}>

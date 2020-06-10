@@ -15,6 +15,7 @@ class Publications extends Component {
     return (
         <div 
           align='center'
+          style={{paddingTop: '2%'}}
         >
             <h1>Publications I've written.</h1>
             <Grid columns={2} divided>

@@ -12,6 +12,7 @@ class home extends Component {
     return (
         <div 
             align='left'
+            style={{paddingTop: '2%'}}
             // style={{paddingLeft : '10%', paddingRight: '10%'}}
         >
             <p>Highly adaptable Masters Computer Science Graduate.</p>
