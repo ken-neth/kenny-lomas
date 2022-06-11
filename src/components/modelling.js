@@ -2,16 +2,9 @@ import React, { Component } from 'react'
 import { Modal, Image} from 'semantic-ui-react'
 
 import finalrender from '../assets/renders/finalrender.jpeg'
-
 import AOpass from '../assets/renders/AmbientOcclusionpass.jpeg'
 import barwindows from '../assets/renders/barwindowsmodel.jpeg'
 import boothmodel from '../assets/renders/boothmodel.jpeg'
-
-import Video1 from '../assets/renders/full_animation.mp4'
-import Video2 from '../assets/renders/sidebyside.mp4'
-
-import "video-react/dist/video-react.css"
-import { Player } from 'video-react'
 
 import Contact from './contact'
 
@@ -51,18 +44,14 @@ class Modelling extends Component {
             <p>Coursework for 2019 COMSM0013 Animation Production unit.</p>
             <p>The brief was to create a short film for a new toy that assembles from 
             small modular components, then comes to life through dance.</p>
-            {/* <video src={Video} autoPlay="true"/> */}
             <div style={{
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
             }}>
-            <Player
-            playsInline
-            fluid={false} width={this.state.width/1.5}
-            // poster="/assets/poster.png"
-            src={Video1}
-            />
+              <iframe width={this.state.width/2} height='500'
+                      src="https://www.youtube.com/embed/2eHQfjRDCkw">
+              </iframe>
             </div>
 
             <br/>
@@ -75,12 +64,9 @@ class Modelling extends Component {
                 alignItems: 'center',
                 justifyContent: 'center',
             }}>
-            <Player
-            playsInline
-            fluid={false} width={this.state.width/1.5}
-            // poster="/assets/poster.png"
-            src={Video2}
-            />
+              <iframe width={this.state.width/2} height='500'
+                      src="https://www.youtube.com/embed/XYHfsCz_E6A">
+              </iframe>
             </div>
             <br/>
             <br/>

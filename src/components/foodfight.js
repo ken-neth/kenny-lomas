@@ -1,12 +1,5 @@
 import React, { Component } from 'react'
 import { Modal, Image } from 'semantic-ui-react'
-
-
-import "video-react/dist/video-react.css";
-import { Player } from 'video-react';
-
-import Video from '../assets/video-1558111780.mp4'
-
 import Cover from '../assets/foodfight/cover.png'
 import Food from '../assets/foodfight/food.png'
 import Game from '../assets/foodfight/game.png'
@@ -50,12 +43,9 @@ class Foodfight extends Component {
                 alignItems: 'center',
                 justifyContent: 'center',
             }}>
-            <Player
-            playsInline
-            fluid={false} width={this.state.width/2}
-            // poster="/assets/poster.png"
-            src={Video}
-            />
+              <iframe width={this.state.width/2} height='500'
+                      src="https://www.youtube.com/embed/1H9YeMuBxyk">
+              </iframe>
             </div>
 
             <h3>The two kitchens rush to complete orders that appear on the main screen. <br/>
